@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to bottom right, #6a0dad, #5d65b1, #4e6cba, #3d79c6, #2a83d2, #198cdd, #008ce5, #008aec, #0085f3, #0081f8, #007bff, #0a72ff);
+    color: #333;
+}
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a0dad; /* Dark Purple */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.menu-buttons {
+    display: flex;
+    gap: 10px;
+}
+.top-menu button {
+    background-color: #9b59b6; /* Medium Purple */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.top-menu button:hover {
+    background-color: #8e44ad; /* Slightly darker Medium Purple */
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile-circle {
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.profile-circle img {
+    width: 100%;
+    height: auto;
+}
+.profile-name {
+    color: white;
+    font-size: 16px;
+}
+.main-content {
+    display: flex;
+    flex: 1;
+}
+.sidebar {
+    width: 220px;
+    background-image: linear-gradient(to bottom, #ff6f61, #6a0dad); /* Light Red to Dark Purple */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar li {
+    margin-bottom: 15px;
+}
+.sidebar a {
+    text-decoration: none;
+    color: #f8f9fa; /* Light Gray */
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #cf6bb9; /* Light Gray */
+}
+.sidebar a:hover {
+    background-color: #e9ecef; /* Lighter Gray */
+    color: #dc3545; /* Red */
+}
+.content {
+    flex: 1;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* Lighter White */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+.content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #6a0dad; /* Dark Purple */
+}
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
