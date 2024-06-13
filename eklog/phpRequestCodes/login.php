@@ -5,6 +5,8 @@ $username = "root";         // Replace with your database username
 $password = "";             // Replace with your database password
 $dbname = "ekpaideftikologismiko";    // Replace with your database name
 
+
+
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -26,6 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get the form data
     $user = sanitizeInput($_POST["username"], $conn);
     $pass = sanitizeInput($_POST["password"], $conn);
+    session_start();
+    $_SESSION['username'] = $user;
 
     // Prepare and bind
     $stmt = $conn->prepare("SELECT username, password FROM usercredentials WHERE username = ?");

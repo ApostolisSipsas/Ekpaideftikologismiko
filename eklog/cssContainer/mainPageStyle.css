@@ -9,6 +9,7 @@ body {
     background-image: linear-gradient(to bottom right, #6a0dad, #5d65b1, #4e6cba, #3d79c6, #2a83d2, #198cdd, #008ce5, #008aec, #0085f3, #0081f8, #007bff, #0a72ff);
     color: #333;
 }
+
 .top-menu {
     display: flex;
     justify-content: space-between;
@@ -17,10 +18,12 @@ body {
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .menu-buttons {
     display: flex;
     gap: 10px;
 }
+
 .top-menu button {
     background-color: #9b59b6; /* Medium Purple */
     border: none;
@@ -31,13 +34,24 @@ body {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
+
+.top-menu h1 {
+    color: #1f9484;
+    font-weight: 1000;
+    background-color: #1a3947;
+    border-radius: 15px;
+}
+
 .top-menu button:hover {
     background-color: #8e44ad; /* Slightly darker Medium Purple */
 }
+
 .profile {
     display: flex;
     align-items: center;
+    position: relative;
 }
+
 .profile-circle {
     background-color: white;
     border-radius: 50%;
@@ -48,32 +62,42 @@ body {
     align-items: center;
     justify-content: center;
     margin-right: 10px;
+    cursor: pointer;
 }
+
 .profile-circle img {
     width: 100%;
     height: auto;
 }
+
 .profile-name {
     color: white;
     font-size: 16px;
+    cursor: pointer;
 }
+
 .main-content {
     display: flex;
     flex: 1;
 }
+
 .sidebar {
+    display: none;
     width: 220px;
     background-image: linear-gradient(to bottom, #ff6f61, #6a0dad); /* Light Red to Dark Purple */
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
+
 .sidebar ul {
     list-style: none;
     padding: 0;
 }
+
 .sidebar li {
     margin-bottom: 15px;
 }
+
 .sidebar a {
     text-decoration: none;
     color: #f8f9fa; /* Light Gray */
@@ -84,10 +108,12 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
     background-color: #cf6bb9; /* Light Gray */
 }
+
 .sidebar a:hover {
     background-color: #e9ecef; /* Lighter Gray */
     color: #dc3545; /* Red */
 }
+
 .content {
     flex: 1;
     padding: 30px;
@@ -96,13 +122,106 @@ body {
     margin: 20px;
     border-radius: 10px;
 }
+
 .content h1 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #6a0dad; /* Dark Purple */
 }
+
 .content p {
     font-size: 16px;
     line-height: 1.6;
     color: #555;
+}
+
+.profile {
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+}
+
+.profile-circle {
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-name {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -10px; /* Adjust this value as needed */
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 100px;
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: flow-root;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.profile:hover .dropdown-menu {
+    display: block;
+}
+
+.mainfield {
+    width: 100%;
+    height: 100%;
+    display: flow-root;
+    background-image: linear-gradient(#9ba5de, #92a0f0, #6b6cf2, #6b6cf2, #92a0f0, #9ba5de);
+}
+
+.statisticsfield {
+    display: none;
+}
+
+.profileFrame {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.contactArea {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.contFrame {
+    Width: 100%;
+    height: 100%;
+}
+.optionsArea{
+        background-color: #007bff;
+        display: none;
 }
